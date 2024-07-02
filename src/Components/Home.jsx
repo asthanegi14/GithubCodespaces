@@ -26,10 +26,10 @@ const imageAltText = "Adult female in office setting leaning against a glass wal
 
 const Home = ({ name, title }) => {
   return (
-    <section id="home" className="min-height">
-      <img className="background" src={image} alt="" />
-      <div style={{ position: "absolute", top: "5rem", left: "2rem", width: "17rem" }}>
-        <h1>{name}</h1>
+    <section id="home" className="min-height" style={{display:"flex", flexDirection:"column", justifyContent:"center", alignItems:"center"}}>
+      <img className="background" src={image} alt="background" />
+      <div style={{ position: "absolute" }}>
+        <h1 style={{textAlign:"center"}}>{name}</h1>
         <h2>{title}</h2>
       </div>
       <div style={{ position: "absolute", bottom: "3rem", left: "50%" }}>
